@@ -1,0 +1,28 @@
+# Docker
+docker-compose.override.yml
+.env
+
+# Airflow
+logs/
+plugins/__pycache__/
+dags/__pycache__/
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# VSCode venv
+venv/
+.venv/
+env/
+project_dentist/
+logs/
+
+# Raw data
+dags/data/*.csv
+
+target/
+dbt_packages/
+logs/
+.user.yml
