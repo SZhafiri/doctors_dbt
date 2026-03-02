@@ -1,0 +1,16 @@
+
+version: 2
+
+sources:
+  - name: project_dentist
+    database: airflow
+    schema: public
+    description: "Data scraped from KKI and SatuSehat SDMK"
+    tables: 
+      - name: raw_dentist
+        description: "Raw data scraped from KKI"
+
+      - name: raw_practice_place
+        description: "Raw data scraped from SatuSehat SDMK, linked to doctor's STR number"
+    
+

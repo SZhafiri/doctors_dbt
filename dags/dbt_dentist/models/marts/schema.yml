@@ -1,0 +1,61 @@
+version: 2
+
+models:
+  - name: ppdgs
+    description: "Shows all dentists who is currently undergoing specialist education. "
+    columns:
+      - name: no_berkas
+        description: "Similar to ID. Unique to each dentist."
+        tests:
+          - not_null
+          - unique
+
+      - name: nama
+        description: "Name of the dentist."
+        tests:
+          - not_null
+
+      - name: kualifikasi
+        description: "Qualification of the dentists."
+        test:
+          - not_null
+
+      - name: tempat_praktek
+        description: "Practice place of the dentist, usually a teaching hospital."
+
+      - name: kota
+        description: "The city of the practice place."
+
+      - name: provinsi
+        description: "The province of the practice place."
+
+  - name: specialist
+    description: "Shows all dentists with specialist dental qualification."
+    columns: 
+      - name: no_berkas
+        description: "Similar to ID. Unique to each dentist."
+        tests:
+          - not_null
+          - unique
+    
+      - name: nama
+        description: "Name of the dentist."
+        tests:
+          - not_null
+
+      - name: kualifikasi
+        description: "Qualification of the dentists."
+        test:
+          - not_null
+      
+      - name: kualifikasi_tambahan
+        description: "Qualification of the dentists."
+    
+      - name: tempat_praktek
+        description: "Practice place of the dentist."
+
+      - name: kota
+        description: "The city of the practice place."
+
+      - name: provinsi
+        description: "The province of the practice place."

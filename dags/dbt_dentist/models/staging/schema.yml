@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+  - name: stg_dentist
+    columns:
+    - name: no_berkas
+      tests:
+        - unique
+        - not_null
+    
+    - name: no_str
+      tests:
+        - unique
+        - not_null
+  
+  - name: stg_practice_place
+    columns:
+      - name: tempat_praktek
+        tests:
+        - not_null
